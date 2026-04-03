@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-10 md:py-16">
         <div className="flex flex-col items-center text-center gap-8">
           {/* Banner image - large and prominent */}
-          <div className="animate-fade-in-up w-full max-w-2xl mx-auto">
+          <div className="animate-fade-in-up w-full max-w-4xl mx-auto">
             <img
               src={banner}
               alt="Happy Nation Store - Acessórios Mobile e Tecnologia"
