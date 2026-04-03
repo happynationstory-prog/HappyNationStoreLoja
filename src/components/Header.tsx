@@ -22,6 +22,7 @@ const Header = () => {
           <a href="#categorias" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Categorias</a>
           <a href="#sobre" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Sobre</a>
           <a href="#contato" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Contato</a>
+          <a href="https://www.instagram.com/happynationstory/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">@happynationstory</a>
         </nav>
 
         <div className="flex items-center gap-4">
