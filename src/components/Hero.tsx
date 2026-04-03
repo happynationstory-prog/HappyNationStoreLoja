@@ -3,24 +3,21 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden">
-      {/* Full-width banner background */}
-      <div className="relative w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center">
-        {/* Background image */}
-        <div className="absolute inset-0">
-          <img
-            src={banner}
-            alt="Happy Nation Store - Acessórios Mobile e Tecnologia"
-            className="w-full h-full object-cover object-center"
-          />
-          {/* Gradient overlay for readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-        </div>
+    <section className="relative overflow-hidden bg-background">
+      <div className="container mx-auto px-4 py-10 md:py-16">
+        <div className="flex flex-col items-center text-center gap-8">
+          {/* Banner image - large and prominent */}
+          <div className="animate-fade-in-up w-full max-w-2xl mx-auto">
+            <img
+              src={banner}
+              alt="Happy Nation Store - Acessórios Mobile e Tecnologia"
+              className="w-full h-auto"
+            />
+          </div>
 
-        {/* Content overlay */}
-        <div className="relative z-10 container mx-auto px-4 pt-20 pb-12 flex flex-col items-center text-center gap-6 mt-auto">
-          <div className="max-w-2xl space-y-4 animate-fade-in-up">
-            <p className="text-lg md:text-xl text-foreground/80 font-medium">
+          {/* Subtitle and description */}
+          <div className="max-w-2xl space-y-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <p className="text-lg md:text-xl text-muted-foreground">
               Acessórios Mobile • Gestão de Tráfego Pago • Desenvolvimento de Mini Sites
             </p>
             <p className="text-muted-foreground max-w-lg mx-auto">
