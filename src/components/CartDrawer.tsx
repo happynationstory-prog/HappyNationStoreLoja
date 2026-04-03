@@ -6,17 +6,15 @@ import { useState } from "react";
 const CartDrawer = () => {
   const { items, isCartOpen, setIsCartOpen, removeFromCart, updateQuantity, totalPrice, clearCart } = useCart();
   const [customerName, setCustomerName] = useState("");
-  const [customerAddress, setCustomerAddress] = useState("");
 
   const handleCheckout = () => {
     const phone = "5585991778762";
     const nameLine = customerName ? `\n👤 Nome: ${customerName}` : "";
-    const addressLine = customerAddress ? `\n📍 Entrega: ${customerAddress}` : "";
 
     const message = `Olá, quero fazer um pedido:\n\n🛒 Produtos:\n${items
       .map(item => `- ${item.name} (Qtd: ${item.quantity}) — R$ ${(item.price * item.quantity).toFixed(2).replace('.', ',')}`)
       .join("\n")}\n\n💰 Total: R$ ${totalPrice.toFixed(2).replace('.', ',')}
-💰 Total no PIX (-10%): R$ ${(totalPrice * 0.9).toFixed(2).replace('.', ',')}${nameLine}${addressLine}\n\nPode me enviar a chave PIX para pagamento?`;
+💰 Total no PIX (-10%): R$ ${(totalPrice * 0.9).toFixed(2).replace('.', ',')}${nameLine}\n\n📍 Retirada no local\n\nPode me enviar a chave PIX para pagamento?`;
 
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/${phone}?text=${encodedMessage}`;
