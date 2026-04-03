@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex items-center gap-3">
           <img src={logo} alt="Happy Nation Store" className="h-10 w-10 rounded-full" />
           <span className="font-heading text-lg font-bold gradient-neon-text hidden sm:block">
-            HAPPY NATION
+            Happy Nation Store
           </span>
         </div>
 
