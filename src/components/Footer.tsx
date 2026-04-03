@@ -13,14 +13,22 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center md:items-end gap-2">
+          <div className="flex flex-col items-center md:items-end gap-3">
             <a
-              href="https://wa.me/5585991778762"
+              href="https://wa.me/+5585991778762?text=Ol%C3%A1%2C%20eu%20quero%20saber%20de%20uma%20informa%C3%A7%C3%A3o%20de%20um%20produto"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               📱 WhatsApp: (85) 99177-8762
+            </a>
+            <a
+              href="https://www.instagram.com/happynationstory/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              📸 Instagram: @happynationstory
             </a>
             <p className="text-xs text-muted-foreground">
               © {new Date().getFullYear()} Happy Nation Store. Todos os direitos reservados.

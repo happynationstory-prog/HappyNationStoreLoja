@@ -22,6 +22,7 @@ const Header = () => {
           <a href="#categorias" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Categorias</a>
           <a href="#sobre" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Sobre</a>
           <a href="#contato" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Contato</a>
+          <a href="https://www.instagram.com/happynationstory/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">@happynationstory</a>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -54,6 +55,7 @@ const Header = () => {
             <a href="#categorias" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground py-2">Categorias</a>
             <a href="#sobre" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground py-2">Sobre</a>
             <a href="#contato" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground py-2">Contato</a>
+            <a href="https://www.instagram.com/happynationstory/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground py-2">📸 @happynationstory</a>
           </nav>
         </div>
       )}
