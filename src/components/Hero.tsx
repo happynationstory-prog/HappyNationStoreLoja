@@ -15,16 +15,19 @@ const Hero = () => {
             <img
               src={logo}
               alt="Happy Nation Store"
-              width={220}
-              height={220}
-              className="rounded-full shadow-neon"
+              width={340}
+              height={340}
+              className="w-[280px] h-[280px] md:w-[340px] md:h-[340px] rounded-2xl shadow-neon object-contain"
             />
           </div>
 
           <div className="max-w-2xl space-y-4 animate-fade-in-up">
-            <h1 className="font-heading text-3xl md:text-5xl font-bold gradient-neon-text leading-tight">
-              HAPPY NATION STORE
+            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-black gradient-neon-text leading-tight tracking-tight">
+              HAPPY NATION
             </h1>
+            <p className="font-heading text-xl md:text-3xl font-bold text-foreground tracking-[0.3em] uppercase">
+              STORE
+            </p>
             <p className="text-lg md:text-xl text-muted-foreground">
               Acessórios Mobile • Gestão de Tráfego Pago • Desenvolvimento de Mini Sites
             </p>
