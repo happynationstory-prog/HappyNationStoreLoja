@@ -1,9 +1,9 @@
-import logo from "@/assets/logo-happy-nation.png";
+import banner from "@/assets/happy-nation-banner.png";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden py-16 md:py-24">
+    <section className="relative overflow-hidden py-12 md:py-20">
       {/* Background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(220_90%_56%_/_0.12)_0%,_transparent_70%)]" />
       <div className="absolute top-20 right-10 w-72 h-72 bg-neon-purple/10 rounded-full blur-[100px]" />
@@ -11,23 +11,15 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center gap-8">
-          <div className="animate-float">
+          <div className="animate-fade-in-up w-full max-w-3xl">
             <img
-              src={logo}
-              alt="Happy Nation Store"
-              width={340}
-              height={340}
-              className="w-[280px] h-[280px] md:w-[340px] md:h-[340px] rounded-2xl shadow-neon object-contain"
+              src={banner}
+              alt="Happy Nation Store - Acessórios Mobile e Tecnologia"
+              className="w-full h-auto rounded-2xl shadow-neon"
             />
           </div>
 
-          <div className="max-w-2xl space-y-4 animate-fade-in-up">
-            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-black gradient-neon-text leading-tight tracking-tight">
-              HAPPY NATION
-            </h1>
-            <p className="font-heading text-xl md:text-3xl font-bold text-foreground tracking-[0.3em] uppercase">
-              STORE
-            </p>
+          <div className="max-w-2xl space-y-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             <p className="text-lg md:text-xl text-muted-foreground">
               Acessórios Mobile • Gestão de Tráfego Pago • Desenvolvimento de Mini Sites
             </p>
