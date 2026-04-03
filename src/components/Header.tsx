@@ -55,6 +55,7 @@ const Header = () => {
             <a href="#categorias" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground py-2">Categorias</a>
             <a href="#sobre" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground py-2">Sobre</a>
             <a href="#contato" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground py-2">Contato</a>
+            <a href="https://www.instagram.com/happynationstory/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground py-2">📸 @happynationstory</a>
           </nav>
         </div>
       )}

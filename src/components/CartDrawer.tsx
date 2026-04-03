@@ -79,13 +79,7 @@ const CartDrawer = () => {
               onChange={e => setCustomerName(e.target.value)}
               className="w-full rounded-lg border border-border bg-muted/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
             />
-            <input
-              type="text"
-              placeholder="Endereço de entrega (opcional)"
-              value={customerAddress}
-              onChange={e => setCustomerAddress(e.target.value)}
-              className="w-full rounded-lg border border-border bg-muted/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
-            />
+            <p className="text-xs text-muted-foreground text-center">📍 Somente retirada no local</p>
 
             <div className="space-y-1">
               <div className="flex justify-between text-sm">
